@@ -9,7 +9,7 @@ function longestNiceSubstring(s: string): string {
     let ans = '';
     let len = 0;
     for (let i = 0; i < s.length; i++) {
-        for (let t = i; t <= s.length; t++) {
+        for (let t = i + 1; t <= s.length; t++) {
             let sub = s.slice(i, t);
             if (isNiceString(sub.split(''))) {
                 if (len < sub.length) {
