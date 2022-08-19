@@ -7,7 +7,7 @@
 // @lc code=start
 function canCompleteCircuit(gas: number[], cost: number[]): number {
     let cur = 0;
-    for (let i = 0; i <= gas.length - 1; i++) {
+    for (let i = gas.length - 1; i >= 0; i--) {
         // Start
         cur = gas[i];
 
